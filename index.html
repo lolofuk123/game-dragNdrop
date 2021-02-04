@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles_game.css">
+</head>
+<body>
+    <header>
+        <h1>Drag 'n' Drop hra</h1>
+    </header>
+    
+
+    <main>
+        <div class="game">
+            <img src="batman.png" alt="batmaaaan" class="batman">
+            <img src="1.png" alt="part1" class="part" id="first">
+            <img src="2.png" alt="part2" class="part" id="second">
+            <img src="3.png" alt="part3" class="part" id="third">
+            <img src="4.png" alt="part4" class="part" id="fourth">
+            <img src="5.png" alt="part5" class="part" id="fifth">
+            <img src="6.png" alt="part6" class="part" id="sixth">
+            <img src="7.png" alt="part7" class="part" id="seventh">   
+            <img src="8.png" alt="part8" class="part" id="eighth"> 
+
+            <div id="R1" ondragover="dragover(event)" ondrop="drop(event)"></div>    
+            <div id="R2" ondragover="dragover(event)" ondrop="drop(event)"></div>
+            <div id="R3" ondragover="dragover(event)" ondrop="drop(event)"></div>
+            <div id="R4" ondragover="dragover(event)" ondrop="drop(event)"></div>
+            <div id="R5" ondragover="dragover(event)" ondrop="drop(event)"></div>
+            <div id="R6" ondragover="dragover(event)" ondrop="drop(event)"></div>
+            <div id="R7" ondragover="dragover(event)" ondrop="drop(event)"></div>
+            <div id="R8" ondragover="dragover(event)" ondrop="drop(event)"></div>
+
+            <div class="parts">
+            <img src="1.png" alt="1" draggable="true" id="P1" ondragstart="dragstart_handler(event)" class="drag-part">
+            <img src="2.png" alt="2" draggable="true" id="P2" ondragstart="dragstart_handler(event)" class="drag-part">
+            <img src="3.png" alt="3" draggable="true" id="P3" ondragstart="dragstart_handler(event)" class="drag-part">
+            <img src="4.png" alt="4" draggable="true" id="P4" ondragstart="dragstart_handler(event)" class="drag-part">
+            <img src="5.png" alt="5" draggable="true" id="P5" ondragstart="dragstart_handler(event)" class="drag-part">
+            <img src="6.png" alt="6" draggable="true" id="P6" ondragstart="dragstart_handler(event)" class="drag-part">
+            <img src="7.png" alt="7" draggable="true" id="P7" ondragstart="dragstart_handler(event)" class="drag-part">   
+            <img src="8.png" alt="8" draggable="true" id="P8" ondragstart="dragstart_handler(event)" class="drag-part"> 
+
+            <h2><time>00:00:00</time></h2>
+            <button id="start" class="btn btn-primary">start</button>
+            <button id="stop" class="btn btn-danger">Reset</button>
+            <footer>
+            </footer>
+        </div>
+ 
+    </main>
+      
+    <script src="script_game_lukas.js"></script>
+</body>
+</html>
